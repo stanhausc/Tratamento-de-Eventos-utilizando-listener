@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Atividade1</string>
+    <string name="letter_size">Tamanho da letra</string>
+    <string name="type_text">Digite um texto...</string>
+    <string name="style">Estilo</string>
+    <string name="Bold">Negrito</string>
+    <string name="Italic">Itálico</string>
+    <string name="uppercase">Maiúscúlas</string>
+    <string name="letter_color">Cor da letra</string>
+    <string name="red">Vermelho</string>
+    <string name="green">Verde</string>
+    <string name="blue">Azul</string>
+</resources>

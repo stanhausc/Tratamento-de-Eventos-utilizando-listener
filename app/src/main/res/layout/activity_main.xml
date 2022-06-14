@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/gray"
+            app:contentPadding="8dp">
+
+            <TextView
+                android:id="@+id/txt_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/edt_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/type_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/letter_size" />
+
+        <SeekBar
+            android:id="@+id/seekbar_letter_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="80"
+            android:min="14" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/style" />
+
+        <CheckBox
+            android:id="@+id/checkbox_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Bold" />
+
+        <CheckBox
+            android:id="@+id/checkbox_italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Italic" />
+
+        <CheckBox
+            android:id="@+id/checkbox_uppercase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uppercase" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/letter_color" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/red" />
+
+            <RadioButton
+                android:id="@+id/radio_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/green" />
+
+            <RadioButton
+                android:id="@+id/radio_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blue" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>
